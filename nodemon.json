@@ -1,0 +1,27 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules",
+    "public/stylesheets/style.css"
+  ],
+  "verbose": true,
+  "execMap": {
+    "js": "node",
+    "scss": "yarn run sass"
+  },
+  "events": {
+    "start": "yarn run sass"
+  },
+  "watch": [
+    "bin/",
+    "public/",
+    "routes/",
+    "views/"
+  ],
+  "env": {
+    "DEBUG": true,
+    "VUE_DEV": true
+  },
+  "ext": "js json vue scss"
+}
